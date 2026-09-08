@@ -1,0 +1,16 @@
+command: local-main> git fetch origin main       // bring changes from remote "main" to intermediatory branch "origin/main"
+          local-main> git checkout -b release origin/main
+
+
+[root@ip-172-31-8-154 devops-automation]# git fetch origin main
+Username for 'https://github.com': trainercloud2023
+Password for 'https://trainercloud2023@github.com':
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 900 bytes | 900.00 KiB/s, done.
+From https://github.com/trainercloud2023/devops-automation
+ * branch            main       -> FETCH_HEAD
+   b9ad69f..512c5c8  main       -> origin/main
+[root@ip-172-31-8-154 devops-automation]#
