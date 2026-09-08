@@ -1,0 +1,20 @@
+Storage cost optimization: There is no possibility of avoiding the duplication of the data in Traditional system.4
+
+Ecommerce-website:
+  * login-feature
+  * logout-feature
+  * add-to-cart
+  * payments
+  * Product
+
+Developer started working on login-feature:
+
+DAY-1: login.java -> 1 GB -> build and execution -> working fine
+
+   Backup_login.java_day1 -> 1 GB
+
+DAY-2: login.java -> 1 GB + 5 GB = 6 GB -> build and execution -> working fine
+
+   Backup_login.java_day2 -> 6 GB
+
+DAY-3: login.java -> 6 GB + 10 GB = 16 GB -> build and execution -> working fine
