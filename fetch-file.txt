@@ -1,0 +1,14 @@
+Working Directory: 
+When you make changes to a file in your working directory, it is then modified, but these modifications 
+are not stored in the codebase. 
+
+Staging Area: 
+ When you stage the file, these changes are marked to be saved in the next commit.  
+
+Local Repo: 
+When you commit the file, these changes are finally stored in your codebase. This you have a local 
+repository on your machine, that is your desktop or laptop, which is defined in your working directory 
+
+Remote Repo: 
+A remote repository that is stored on the cloud. Eg: Github
+
