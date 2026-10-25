@@ -8,21 +8,28 @@ pipeline {
             }
         }
 
-        stage('Build WAR') {
+        stage('Build and Test') {
             steps {
                 dir('project/app') {
-                    sh 'mvn package'
+                    sh 'mvn clean package'
                 }
+            }
+        }
+
+        stage('Verify WAR') {
+            steps {
+                sh 'test -s project/app/target/webapp.war'
+                echo 'WAR artifact exists and is not empty.'
             }
         }
     }
 
     post {
         success {
-            echo 'Build completed successfully.'
+            echo 'Build, tests, and artifact verification completed successfully.'
         }
         failure {
-            echo 'Build failed. Check the console output.'
+            echo 'Pipeline failed. Check the console output.'
         }
     }
 }
